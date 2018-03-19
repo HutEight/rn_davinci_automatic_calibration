@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8.3)
+project(automatic_calibration)
+find_package(catkin REQUIRED)
+catkin_package()
+#install(PROGRAMS scripts/green_arm.sh DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})

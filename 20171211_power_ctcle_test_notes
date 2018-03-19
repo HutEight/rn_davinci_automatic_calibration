@@ -1,0 +1,47 @@
+RAF
+
+20171211 POWER CYCLE TEST NOTES/LOGS
+---
+
+1.	[1529]
+		TEST 01 COMPLETE.	
+		--> power_cycle_test_01.csv
+
+2.	[1530]
+		MACHINE TURNED OFF.
+
+3.	[1530]
+		ROBOT JOINTS RANDOMLY MOVED AROUND.
+
+4.	[1532]
+		AWAITING ORDERS.
+
+5.	[1536]
+		ROBOT POWERED ON.
+		LAUNCHING HARDWARE AND CONTROL
+
+6.	[1539]
+		SOMETHING WRONG WITH THE 
+			roslaunch cwru_davinci_hardware teleop_default_default.launch RVIZ:=true
+		LOGGING OUT ACCOUNT TO RETRY.
+
+7.	[1607]
+		RUNNING THE SECOND TEST.
+
+8.	[1609]
+		--> power_cycle_test_02.csv
+
+9.	[1617]
+		RUNNIG THE THIRD TEST.
+
+10.	[1633]
+		--> power_cycle_test_03.csv
+
+11.	[1640]
+		--> power_cycle_test_04.csv
+
+12.	[1645]
+		--> power_cycle_test_05.csv
+
+13.	[1655]
+		--> power_cycle_test_06.csv

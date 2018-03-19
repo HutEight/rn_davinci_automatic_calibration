@@ -1,0 +1,1 @@
+Automation scripts for use with Will's Matlab code. Roslaunch automatic_calibration green_arm.launch or yellow_arm.launch from the control computer, and the calibration csv files will be placed in the csvs folder.
