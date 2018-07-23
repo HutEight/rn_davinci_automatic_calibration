@@ -26,8 +26,8 @@ BAE_SYSTEMS='\e[41m BAE_SYSTEMS \033[0m';
 echo -e "\n\n${BAE_SYSTEMS}"
  date
 
-echo -e "\n  ${Underlined_t}GREEN ARM PRIMATIC OFFSETS ACQUISITION SCRIPT${RS}\n"
-echo -e "${Bold_t}Da Vinci automatic calibration--Right (\033[0;32mgreen\033[1;37m) arm.${RS}"
+echo -e "\n  ${Underlined_t}YELLOW ARM PRIMATIC OFFSETS ACQUISITION SCRIPT${RS}\n"
+echo -e "${Bold_t}Da Vinci automatic calibration--Left (yellow) arm.${RS}"
 echo -e "\n${Bold_t}${Green_t}      Press any key to begin.${RS}${NC}\n\n"
 read -rsp $'' -n1 key;
 

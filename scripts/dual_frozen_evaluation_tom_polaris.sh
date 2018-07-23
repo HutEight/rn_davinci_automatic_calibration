@@ -35,9 +35,9 @@ read -rsp $'' -n1 key;
 
 #############
 echo -e "\n  Recording PSM1 Polaris Pts..\n"
-rosbag record --duration=166 -O  green_evaluation.bag /polaris_sensor/stray_markers &
+rosbag record --duration=225 -O  green_evaluation.bag /polaris_sensor/stray_markers &
 rosrun cwru_davinci_playfile playback_portalspace /home/sxh759/catkin_ws/src/automatic_calibration/play/psp/dual_frozen/green_evaluation.psp;
-sleep 167;
+sleep 225;
 echo -e "\n  ${Bold_t}PSM1 Data Recording Complete!${RS}\n"
 
 ###########
@@ -49,9 +49,9 @@ read -rsp $'' -n1 key;
 ###########
 
 echo -e "\n  Recording PSM2 Polaris Pts..\n"
-rosbag record --duration=166 -O  yellow_evaluation.bag /polaris_sensor/stray_markers &
+rosbag record --duration=225 -O  yellow_evaluation.bag /polaris_sensor/stray_markers &
 rosrun cwru_davinci_playfile playback_portalspace /home/sxh759/catkin_ws/src/automatic_calibration/play/psp/dual_frozen/yellow_evaluation.psp;
-sleep 167;
+sleep 225;
 echo -e "\n  ${Bold_t}PSM2 Data Recording Complete!${RS}\n"
 
 #############
@@ -67,9 +67,9 @@ echo -e "\t\033[1;37mConversion Complete!\033[0m";
 
 ##############
 
-mv $PWD/outputs_conversion/green_evaluation/polaris_sensor/raw_points.csv $PWD/green_evaluation.csv;
+mv $PWD/outputs_conversion/green_evaluation/polaris_sensor/stray_markers.csv $PWD/green_evaluation.csv;
 
-mv $PWD/outputs_conversion/yellow_evaluation/polaris_sensor/raw_points.csv $PWD/yellow_evaluation.csv;
+mv $PWD/outputs_conversion/yellow_evaluation/polaris_sensor/stray_markers.csv $PWD/yellow_evaluation.csv;
 
 echo -e "\033[1;37m\nPreprocessing data... \033[0m";
 
