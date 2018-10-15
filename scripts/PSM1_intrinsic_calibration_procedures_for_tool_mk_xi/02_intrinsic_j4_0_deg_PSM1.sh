@@ -27,18 +27,19 @@ echo -e "\n\n${BAE_SYSTEMS}"
  date
 
 echo -e "\n  ${Underlined_t}DA VINCI CALIBRATION AUTO DATA ACQUISITION TOOL${RS}\n"
-echo -e "${Bold_t}  PSM1/JOINT1 ENCODER QUALITY TEST${RS}"
+echo -e "${Bold_t}  PSM1 INTRINSIC CALIBRATION${RS}"
 echo -e "  CALIBRATION TOOL ${Bold_t}MK. XI${RS}\n"
 
 echo -e "  THIS IS STEP 2 OF THE PSM INTRINSIC CALIBRATION PROCEDURE.${RS}\n"
 
 echo -e "${Bold_t}  ${Underlined_t}DATA TO BE COLLECTED${RS}"
-echo -e "${Bold_t}  1. JOINT 1 ARC. (DUR.)${RS}"
-echo -e "${Bold_t}  2. JOINT 2 ARC.${RS}"
-echo -e "${Bold_t}  3. JOINT 4 & 5 SMALL SPHERES WITH JOINT 3 OFFSETS.${RS}"
-echo -e "${Bold_t}  4. JOINT 5 ARC.${RS}"
-echo -e "${Bold_t}  5. JOINT 6 ARC.${RS}"
-echo -e "${Bold_t}  APPROXIMATE DURATION: .${RS}"
+echo -e "${Bold_t}  1. JOINT 1 ARC. ${RS}(DUR. 220 SCE)${RS}"
+echo -e "${Bold_t}  2. JOINT 2 ARC. ${RS}(DUR. 220 SCE)${RS}"
+echo -e "${Bold_t}  3. JOINT 4 & 5 SMALL SPHERES WITH JOINT 3 OFFSETS. ${RS}(DUR. 1080 SCE)${RS}"
+echo -e "${Bold_t}  4. JOINT 5 ARC. ${RS}(DUR. 110 SCE)${RS}"
+echo -e "${Bold_t}  5. JOINT 6 ARC. ${RS}(DUR. 110 SCE)${RS}"
+echo -e "  ---${RS}"
+echo -e "${Bold_t}  ${RS}APPROXIMATE TOTAL DURATION: 35 MIN.${RS}"
 
 echo -e "\n${Bold_t}  --- PRESS ANY KEY TO BEGIN ---${RS}\n\n"
 read -rsp $'' -n1 key;
@@ -54,7 +55,7 @@ echo -e "${Bold_t}  1. TAPE THE GAP BETWEEN THE SHAFT AND THE TUBE.${RS}"
 echo -e "${Bold_t}  2. POSITION THE POLARIS SENSOR TOWARDS THE FACE OF THE MARKER.${RS}"
 echo -e "${Bold_t}  3. CHECK POLARIS TOPICS.${RS}"
 echo -e "${Bold_t}  4. PRESS ANY KEY TO START DATA COLLECTION.${RS}"
-echo -e "${Bold_t}  5. WAIT TILL FURTHER INSTRUCTIONS ON SCREEN.${RS}"
+echo -e "${Bold_t}  5. WAIT TILL FURTHER INSTRUCTIONS PROMPT IN 8 MIN.${RS}"
 
 
 read -rsp $'' -n1 key;
@@ -79,7 +80,7 @@ echo -e "\n  ${Bold_t}Joint 2 Outter Arc Data Recording Complete!${RS}\n"
 
 echo -e "${Bold_t}  ${Underlined_t}ACTION REQUIRED${RS}\n"
 echo -e "${Bold_t}  1. REMOVE THE TAPE.${RS}"
-echo -e "${Bold_t}  2. PRESS ANY KEY TO CONTINUE DATA COLLECTION.${RS}"
+echo -e "${Bold_t}  2. PRESS ANY KEY TO CONTINUE THE DATA COLLECTION.${RS}"
 read -rsp $'' -n1 key;
 
 
