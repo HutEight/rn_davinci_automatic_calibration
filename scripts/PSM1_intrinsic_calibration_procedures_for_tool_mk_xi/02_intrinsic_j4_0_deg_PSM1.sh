@@ -162,7 +162,7 @@ bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/07_g
 bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/08_green_small_sphere_23cm.bag $PWD/outputs_conversion;
 
 bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/09_green_j5_arc_01_at_j3_14cm.bag $PWD/outputs_conversion;
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/10_green_j6_arc_01_at_j3_14cm.bag $PWD/outputs_conversion;
+bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/10_green_j6_arc_01_at_j3_14cm.bag $PWD/outputs_conversion;             
 
 echo -e "\t\033[1;37mConversion Complete!\033[0m";
 
@@ -170,7 +170,7 @@ echo -e "\t\033[1;37mConversion Complete!\033[0m";
 
 mv $PWD/outputs_conversion/03_green_j1_arc_01/polaris_sensor/targets.csv $PWD/03_green_j1_arc_01.csv;
 mv $PWD/outputs_conversion/04_green_j2_arc_01/polaris_sensor/targets.csv $PWD/04_green_j2_arc_01.csv;
-
+ 
 mv $PWD/outputs_conversion/05_green_small_sphere_5cm/polaris_sensor/targets.csv $PWD/05_green_small_sphere_5cm.csv;
 mv $PWD/outputs_conversion/06_green_small_sphere_11cm/polaris_sensor/targets.csv $PWD/06_green_small_sphere_11cm.csv;
 mv $PWD/outputs_conversion/07_green_small_sphere_17cm/polaris_sensor/targets.csv $PWD/07_green_small_sphere_17cm.csv;
