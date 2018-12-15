@@ -47,7 +47,7 @@ read -rsp $'' -n1 key;
 
 
 echo -e "  Moving Robot arm to prepose 1..\n"
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM1_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM1/01_green_prepose_01.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM1_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM1/01_green_prepose_01.jsp;
 sleep 10;
 
 echo -e "${Bold_t}  ${Underlined_t}CHECKLIST${RS}\n"
@@ -65,7 +65,7 @@ read -rsp $'' -n1 key;
 
 echo -e "\n  Recording Joint 1 Outter Arc Data..\n"
 rosbag record --duration=3 -O  03_green_j1_arc_01.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM1_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM1/03_green_j1_arc_01.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM1_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM1/03_green_j1_arc_01.jsp;
 sleep 3;
 
 
@@ -76,7 +76,7 @@ scrdir=$(rospack find rosbag_to_matlab);
 echo -e "\033[1;37m\nConverting rosbag data... \033[0m";
 
 
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/03_green_j1_arc_01.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/03_green_j1_arc_01.bag $PWD/outputs_conversion;
           
 
 echo -e "\t\033[1;37mConversion Complete!\033[0m";

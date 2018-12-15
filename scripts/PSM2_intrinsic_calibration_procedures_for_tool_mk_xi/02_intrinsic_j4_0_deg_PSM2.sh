@@ -47,7 +47,7 @@ read -rsp $'' -n1 key;
 
 
 echo -e "  Moving Robot arm to prepose 1..\n"
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/01_yellow_prepose_01.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/01_yellow_prepose_01.jsp;
 sleep 10;
 
 echo -e "${Bold_t}  ${Underlined_t}CHECKLIST${RS}\n"
@@ -65,13 +65,13 @@ read -rsp $'' -n1 key;
 
 echo -e "\n  Recording Joint 1 Outter Arc Data..\n"
 rosbag record --duration=210 -O  03_yellow_j1_arc_01.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/03_yellow_j1_arc_01.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/03_yellow_j1_arc_01.jsp;
 sleep 220;
 echo -e "\n  ${Bold_t}Joint 1 Outter Arc Data Recording Complete!${RS}\n"
 
 echo -e "\n  Recording Joint 2 Outter Arc Data..\n"
 rosbag record --duration=210 -O  04_yellow_j2_arc_01.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/04_yellow_j2_arc_01.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/04_yellow_j2_arc_01.jsp;
 sleep 220;
 echo -e "\n  ${Bold_t}Joint 2 Outter Arc Data Recording Complete!${RS}\n"
 
@@ -84,7 +84,7 @@ echo -e "${Bold_t}  2. PRESS ANY KEY TO CONTINUE THE DATA COLLECTION.${RS}"
 read -rsp $'' -n1 key;
 
 
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/04a_yellow_small_prepose.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/04a_yellow_small_prepose.jsp;
 sleep 15;
 echo -e "\n  ${Bold_t}Arm has moved to Small spheres prepose${RS}\n"
 
@@ -92,7 +92,7 @@ echo -e "\n  ${Bold_t}Arm has moved to Small spheres prepose${RS}\n"
 echo -e "\n  Recording Small Sphere Data 01..\n"
 echo -e "Reading playfile: 05_yellow_small_sphere_5cm.jsp"
 rosbag record --duration=265 -O  05_yellow_small_sphere_5cm.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/05_yellow_small_sphere_5cm.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/05_yellow_small_sphere_5cm.jsp;
 sleep 270;
 echo -e "\n  ${Bold_t}Small Sphere Data 01 Recording Complete!${RS}\n"
 
@@ -100,7 +100,7 @@ echo -e "\n  ${Bold_t}Small Sphere Data 01 Recording Complete!${RS}\n"
 echo -e "\n  Recording Small Sphere Data 02..\n"
 echo -e "Reading playfile: 06_yellow_small_sphere_11cm.jsp"
 rosbag record --duration=265 -O  06_yellow_small_sphere_11cm.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/06_yellow_small_sphere_11cm.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/06_yellow_small_sphere_11cm.jsp;
 sleep 270;
 echo -e "\n  ${Bold_t}Small Sphere Data 02 Recording Complete!${RS}\n"
 
@@ -108,7 +108,7 @@ echo -e "\n  ${Bold_t}Small Sphere Data 02 Recording Complete!${RS}\n"
 echo -e "\n  Recording Small Sphere Data 03..\n"
 echo -e "Reading playfile: 07_yellow_small_sphere_17cm.jsp"
 rosbag record --duration=265 -O  07_yellow_small_sphere_17cm.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/07_yellow_small_sphere_17cm.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/07_yellow_small_sphere_17cm.jsp;
 sleep 270;
 echo -e "\n  ${Bold_t}Small Sphere Data 03 Recording Complete!${RS}\n"
 
@@ -116,7 +116,7 @@ echo -e "\n  ${Bold_t}Small Sphere Data 03 Recording Complete!${RS}\n"
 echo -e "\n  Recording Small Sphere Data 04..\n"
 echo -e "Reading playfile: 08_yellow_small_sphere_23cm.jsp"
 rosbag record --duration=265 -O  08_yellow_small_sphere_23cm.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/08_yellow_small_sphere_23cm.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/08_yellow_small_sphere_23cm.jsp;
 sleep 270;
 echo -e "\n  ${Bold_t}Small Sphere Data 04 Recording Complete!${RS}\n"
 
@@ -126,7 +126,7 @@ echo -e "\n  ${Bold_t}Small Sphere Data 04 Recording Complete!${RS}\n"
 # JOINT 5 AND 6 ARCS AT A FIXED JOINT 3 (PRISMATIC) OFFSET.
 
 echo -e "\n  Going to Joint 5 and 6 arcs prepose with a constant Joint 3 offset of 140 mm..\n"
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/09_yellow_prepose_at_j3_14cm.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/09_yellow_prepose_at_j3_14cm.jsp;
 sleep 15;
 echo -e "\n  ${Bold_t}Arm has reached prepose.${RS}\n"
 
@@ -134,7 +134,7 @@ echo -e "\n  ${Bold_t}Arm has reached prepose.${RS}\n"
 echo -e "\n  Recording Joint 5 Arc..\n"
 echo -e "Reading playfile: 09_yellow_j5_arc_01_at_j3_14cm.jsp"
 rosbag record --duration=110 -O  09_yellow_j5_arc_01_at_j3_14cm.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/09_yellow_j5_arc_01_at_j3_14cm.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/09_yellow_j5_arc_01_at_j3_14cm.jsp;
 sleep 110;
 echo -e "\n  ${Bold_t}Joint 5 Acc Data Recording Complete!${RS}\n"
 
@@ -142,7 +142,7 @@ echo -e "\n  ${Bold_t}Joint 5 Acc Data Recording Complete!${RS}\n"
 echo -e "\n  Recording Joint 6 Arc..\n"
 echo -e "Reading playfile: 10_yellow_j6_arc_01_at_j3_14cm.jsp"
 rosbag record --duration=110 -O  10_yellow_j6_arc_01_at_j3_14cm.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/10_yellow_j6_arc_01_at_j3_14cm.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/02_intrinsic_j4_0_deg_PSM2/10_yellow_j6_arc_01_at_j3_14cm.jsp;
 sleep 110;
 echo -e "\n  ${Bold_t}Joint 6 Acc Data Recording Complete!${RS}\n"
 
@@ -153,16 +153,16 @@ scrdir=$(rospack find rosbag_to_matlab);
 echo -e "\033[1;37m\nConverting rosbag data... \033[0m";
 
 
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/03_yellow_j1_arc_01.bag $PWD/outputs_conversion;
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/04_yellow_j2_arc_01.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/03_yellow_j1_arc_01.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/04_yellow_j2_arc_01.bag $PWD/outputs_conversion;
 
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/05_yellow_small_sphere_5cm.bag $PWD/outputs_conversion;
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/06_yellow_small_sphere_11cm.bag $PWD/outputs_conversion;
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/07_yellow_small_sphere_17cm.bag $PWD/outputs_conversion;
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/08_yellow_small_sphere_23cm.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/05_yellow_small_sphere_5cm.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/06_yellow_small_sphere_11cm.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/07_yellow_small_sphere_17cm.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/08_yellow_small_sphere_23cm.bag $PWD/outputs_conversion;
 
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/09_yellow_j5_arc_01_at_j3_14cm.bag $PWD/outputs_conversion;
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/10_yellow_j6_arc_01_at_j3_14cm.bag $PWD/outputs_conversion;             
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/09_yellow_j5_arc_01_at_j3_14cm.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/10_yellow_j6_arc_01_at_j3_14cm.bag $PWD/outputs_conversion;             
 
 echo -e "\t\033[1;37mConversion Complete!\033[0m";
 

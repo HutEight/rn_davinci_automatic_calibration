@@ -45,7 +45,7 @@ echo -e "${Bold_t}  2. PRESS ANY KEY TO START DATA COLLECTION.${RS}"
 read -rsp $'' -n1 key;
 
 
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/1a.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/1a.jsp;
 sleep 10;
 echo -e "\n  ${Bold_t}Arm has moved to Small spheres prepose${RS}\n"
 #############
@@ -53,7 +53,7 @@ echo -e "\n  ${Bold_t}Arm has moved to Small spheres prepose${RS}\n"
 echo -e "\n  Recording Small Sphere Data 01..\n"
 echo -e "Reading playfile: 1_small_sphere.jsp"
 rosbag record --duration=200 -O  1_small_sphere.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/1_small_sphere.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/1_small_sphere.jsp;
 sleep 200;
 echo -e "\n  ${Bold_t}Small Sphere Data 01 Recording Complete!${RS}\n"
 
@@ -61,7 +61,7 @@ echo -e "\n  ${Bold_t}Small Sphere Data 01 Recording Complete!${RS}\n"
 echo -e "\n  Recording Small Sphere Data 02..\n"
 echo -e "Reading playfile: 2_small_sphere.jsp"
 rosbag record --duration=200 -O  2_small_sphere.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/2_small_sphere.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/2_small_sphere.jsp;
 sleep 200;
 echo -e "\n  ${Bold_t}Small Sphere Data 02 Recording Complete!${RS}\n"
 
@@ -69,7 +69,7 @@ echo -e "\n  ${Bold_t}Small Sphere Data 02 Recording Complete!${RS}\n"
 echo -e "\n  Recording Small Sphere Data 03..\n"
 echo -e "Reading playfile: 3_small_sphere.jsp"
 rosbag record --duration=200 -O  3_small_sphere.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/3_small_sphere.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/3_small_sphere.jsp;
 sleep 200;
 echo -e "\n  ${Bold_t}Small Sphere Data 03 Recording Complete!${RS}\n"
 
@@ -77,7 +77,7 @@ echo -e "\n  ${Bold_t}Small Sphere Data 03 Recording Complete!${RS}\n"
 echo -e "\n  Recording Small Sphere Data 04..\n"
 echo -e "Reading playfile: 4_small_sphere.jsp"
 rosbag record --duration=200 -O  4_small_sphere.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/4_small_sphere.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/4_small_sphere.jsp;
 sleep 200;
 echo -e "\n  ${Bold_t}Small Sphere Data 04 Recording Complete!${RS}\n"
 
@@ -85,7 +85,7 @@ echo -e "\n  ${Bold_t}Small Sphere Data 04 Recording Complete!${RS}\n"
 echo -e "\n  Recording Small Sphere Data 05..\n"
 echo -e "Reading playfile: 5_small_sphere.jsp"
 rosbag record --duration=200 -O  5_small_sphere.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/5_small_sphere.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/5_small_sphere.jsp;
 sleep 200;
 echo -e "\n  ${Bold_t}Small Sphere Data 05 Recording Complete!${RS}\n"
 
@@ -93,7 +93,7 @@ echo -e "\n  ${Bold_t}Small Sphere Data 05 Recording Complete!${RS}\n"
 echo -e "\n  Recording Small Sphere Data 06..\n"
 echo -e "Reading playfile: 6_small_sphere.jsp"
 rosbag record --duration=200 -O  6_small_sphere.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/6_small_sphere.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/6_small_sphere.jsp;
 sleep 200;
 echo -e "\n  ${Bold_t}Small Sphere Data 06 Recording Complete!${RS}\n"
 
@@ -101,7 +101,7 @@ echo -e "\n  ${Bold_t}Small Sphere Data 06 Recording Complete!${RS}\n"
 echo -e "\n  Recording Small Sphere Data 07..\n"
 echo -e "Reading playfile: 7_small_sphere.jsp"
 rosbag record --duration=200 -O  7_small_sphere.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/7_small_sphere.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/7_small_sphere.jsp;
 sleep 200;
 echo -e "\n  ${Bold_t}Small Sphere Data 07 Recording Complete!${RS}\n"
 
@@ -109,7 +109,7 @@ echo -e "\n  ${Bold_t}Small Sphere Data 07 Recording Complete!${RS}\n"
 echo -e "\n  Recording Small Sphere Data 08..\n"
 echo -e "Reading playfile: 8_small_sphere.jsp"
 rosbag record --duration=200 -O  8_small_sphere.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/8_small_sphere.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/03_quality_test_spheres_PSM2/8_small_sphere.jsp;
 sleep 200;
 echo -e "\n  ${Bold_t}Small Sphere Data 08 Recording Complete!${RS}\n"
 
@@ -121,17 +121,17 @@ scrdir=$(rospack find rosbag_to_matlab);
 echo -e "\033[1;37m\nConverting rosbag data... \033[0m";
 
 
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/1_small_sphere.bag $PWD/outputs_conversion;
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/2_small_sphere.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/1_small_sphere.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/2_small_sphere.bag $PWD/outputs_conversion;
 
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/3_small_sphere.bag $PWD/outputs_conversion;
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/4_small_sphere.bag $PWD/outputs_conversion;
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/5_small_sphere.bag $PWD/outputs_conversion;
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/6_small_sphere.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/3_small_sphere.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/4_small_sphere.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/5_small_sphere.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/6_small_sphere.bag $PWD/outputs_conversion;
 
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/7_small_sphere.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/7_small_sphere.bag $PWD/outputs_conversion;
 
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/8_small_sphere.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/8_small_sphere.bag $PWD/outputs_conversion;
 
 echo -e "\t\033[1;37mConversion Complete!\033[0m";
 
