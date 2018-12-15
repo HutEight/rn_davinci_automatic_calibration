@@ -37,7 +37,7 @@ read -rsp $'' -n1 key;
 
 #############
 
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/01_joint_2_incremental_PSM2/01_j2_pre_pose.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/01_joint_2_incremental_PSM2/01_j2_pre_pose.jsp;
 sleep 10;
 echo -e "\n  Armed has moved to Small spheres prepose${RS}\n"
 
@@ -54,7 +54,7 @@ read -rsp $'' -n1 key;
 echo -e "\n  Recording 02_j2_arc..\n"
 echo -e "Reading playfile: 02_j2_arc.jsp"
 rosbag record --duration=200 -O  02_j2_arc.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/01_joint_2_incremental_PSM2/02_j2_arc.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/01_joint_2_incremental_PSM2/02_j2_arc.jsp;
 sleep 200;
 echo -e "\n  ${Bold_t}02_j2_arc Recording Complete!${RS}\n"
 
@@ -62,7 +62,7 @@ echo -e "\n  ${Bold_t}02_j2_arc Recording Complete!${RS}\n"
 echo -e "\n  Recording 03_j2_still_samples_j4_90_deg..\n"
 echo -e "Reading playfile: 03_j2_still_samples_j4_90_deg.jsp"
 rosbag record --duration=115 -O  03_j2_still_samples_j4_90_deg.bag /polaris_sensor/targets &
-rosrun cwru_davinci_playfile playback_jointspace /home/sxh759/catkin_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/01_joint_2_incremental_PSM2/03_j2_still_samples_j4_90_deg.jsp;
+rosrun cwru_davinci_playfile playback_jointspace /home/dvu/ros_ws/src/automatic_calibration/play/jsp/PSM2_intrinsic_calibration_playfiles_for_tool_mk_xi/01_joint_2_incremental_PSM2/03_j2_still_samples_j4_90_deg.jsp;
 sleep 115;
 echo -e "\n  ${Bold_t}Small Sphere Data 02 Recording Complete!${RS}\n"
 
@@ -74,8 +74,8 @@ scrdir=$(rospack find rosbag_to_matlab);
 echo -e "\033[1;37m\nConverting rosbag data... \033[0m";
 
 
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/02_j2_arc.bag $PWD/outputs_conversion;
-bash /home/sxh759/catkin_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/03_j2_still_samples_j4_90_deg.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/02_j2_arc.bag $PWD/outputs_conversion;
+bash /home/dvu/ros_ws/src/rosbag_to_matlab/scripts/bag_to_csv.sh $PWD/03_j2_still_samples_j4_90_deg.bag $PWD/outputs_conversion;
 
 
 
